@@ -10,26 +10,28 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
 </head>
-<body>
 
+<body>
   <!-- Top Info Bar -->
-<div class="top-info">
-  <div class="flag-container">
-    <img src="{{ url_for('static', filename='images/nepal_flag.gif') }}" alt="Nepal Flag">
-  </div>
-  <div class="header-text">
-    <div class="header-title">MANISH DANGI</div>
-    <div class="header-location">Winnipeg, MB</div>
-    <div class="header-contacts">
-      <a href="mailto:manishofficial4378@email.com">
-        manishofficial4378@email.com
-      </a>
-      | Phone: (431) 792-8448
-      | <a href="https://www.linkedin.com/in/dangimanish" target="_blank">LinkedIn</a>
-      | <a href="https://github.com/zobrathemanish" target="_blank">GitHub</a>
+  <div class="top-info">
+    <div class="flag-container">
+      <img src="{{ url_for('static', filename='images/nepal_flag.gif') }}" alt="Nepal Flag">
     </div>
+    <div class="header-text">
+      <div class="header-title">MANISH DANGI</div>
+      <div class="header-location">Winnipeg, MB</div>
+      <div class="header-contacts">
+        <a href="mailto:manishofficial4378@email.com">manishofficial4378@email.com</a>
+        | Phone: (431) 792-8448
+        | <a href="https://www.linkedin.com/in/dangimanish" target="_blank">LinkedIn</a>
+        | <a href="https://github.com/zobrathemanish" target="_blank">GitHub</a>
+      </div>
+    </div>
+     <!-- New profile picture container -->
+  <div class="profile-pic">
+    <img src="{{ url_for('static', filename='images/md.jpg') }}" alt="Manish Dangi">
   </div>
-</div>
+  </div>
 
   <!-- Navigation -->
   <nav>
@@ -48,6 +50,8 @@
   <section id="recent-updates">
     <div class="container">
       <h2>Recent Updates</h2>
+    </div>
+    <div class="fullwidth-slider">
       <div class="marquee-container">
         <div class="slider" id="recentSlider">
           <!-- Original Slides -->
@@ -59,7 +63,7 @@
           </a>
           <a href="blogs.html">
             <div class="slide">
-              <img src="{{ url_for('static', filename='images/internship.jpg') }}" alt="Internship">
+              <img src="{{ url_for('static', filename='images/cushman_wakefield.jpg') }}" alt="Internship">
               <div class="slide-caption">Data Intern at Cushman and Wakefield Stevenson</div>
             </div>
           </a>
@@ -78,25 +82,25 @@
           <!-- Duplicate Slides for Seamless Looping -->
           <a href="blogs.html">
             <div class="slide">
-              <img src="{{ url_for('static', filename='images/graduation.png') }}" alt="Graduation">
+              <img src="{{ url_for('static', filename='images/grad_pic.jpeg') }}" alt="Graduation">
               <div class="slide-caption">Graduated from University of Winnipeg</div>
             </div>
           </a>
           <a href="blogs.html">
             <div class="slide">
-              <img src="{{ url_for('static', filename='images/internship.jpg') }}" alt="Internship">
+              <img src="{{ url_for('static', filename='images/intern.jpg') }}" alt="Internship">
               <div class="slide-caption">Data Intern at Cushman and Wakefield Stevenson</div>
             </div>
           </a>
           <a href="blogs.html">
             <div class="slide">
-              <img src="{{ url_for('static', filename='images/internship.jpg') }}" alt="FPL Recommendation">
+              <img src="{{ url_for('static', filename='images/fpl_logo.jpg') }}" alt="FPL Recommendation">
               <div class="slide-caption">FPL Recommendation System Project</div>
             </div>
           </a>
           <a href="blogs.html">
             <div class="slide">
-              <img src="{{ url_for('static', filename='images/internship.jpg') }}" alt="Sports Betting">
+              <img src="{{ url_for('static', filename='images/scoresage.jpg') }}" alt="Sports Betting">
               <div class="slide-caption">Sports Betting System (ScoreSage)</div>
             </div>
           </a>
@@ -105,119 +109,105 @@
     </div>
   </section>
 
-<!-- Career Highlights Timeline Section -->
-<section id="career">
-  <div class="container">
-    <h2>Career Highlights</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Machine Learning Engineer at Bottle Tech</h3>
-          <p>Developed cutting-edge computer vision AI models and production-level machine learning systems.</p>
+  <!-- Career Highlights Timeline Section -->
+  <section id="career">
+    <div class="container">
+      <h2>Career Highlights</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Machine Learning Engineer at Bottle Tech</h3>
+            <p>Developed cutting-edge computer vision AI models and production-level machine learning systems.</p>
+          </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Machine Learning Team Lead at Bottle Tech</h3>
-          <p>Led a team of 12 to drive AI initiatives and optimize machine learning processes.</p>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Machine Learning Team Lead at Bottle Tech</h3>
+            <p>Led a team of 12 to drive AI initiatives and optimize machine learning processes.</p>
+          </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Traffic Management Project at Nebula Tech</h3>
-          <p>Implemented AI solutions to optimize traffic flow and reduce congestion.</p>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Traffic Management Project at Nebula Tech</h3>
+            <p>Implemented AI solutions to optimize traffic flow and reduce congestion.</p>
+          </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Self-developed ecommerce app - Sajilo Print</h3>
-          <p>Chasing some personal hobby, I developed a custom printing based ecommerce app and publish it. I launched in playstore and generated revenue through affiliate marketing.</p>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Self-developed ecommerce app - Sajilo Print</h3>
+            <p>Developed a custom printing-based ecommerce app and launched on Play Store, generating affiliate revenue.</p>
+          </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Program Coordinator at Mero Coding Class</h3>
-          <p>Coordinated training programs to enhance coding skills and technical proficiency and managed cross-functional departments. </p>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Program Coordinator at Mero Coding Class</h3>
+            <p>Coordinated training programs and managed cross-functional departments to enhance technical proficiency.</p>
+          </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Computer Instructor at NIST</h3>
-          <p>Taught computer science fundamentals and advanced topics at NIST.</p>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Computer Instructor at NIST</h3>
+            <p>Taught computer science fundamentals and advanced topics at NIST.</p>
+          </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Data Analyst at Nebula Tech</h3>
-          <p>Taught computer science fundamentals and advanced topics at NIST.</p>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Data Analyst at Nebula Tech</h3>
+            <p>Analyzed data and provided insights to optimize business solutions.</p>
+          </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Academic Feedback Specialist at Studiosity</h3>
-          <p>Provided detailed academic feedback and mentoring for improved learning outcomes.</p>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Academic Feedback Specialist at Studiosity</h3>
+            <p>Provided detailed academic feedback and mentoring for improved learning outcomes.</p>
+          </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Maths Tutor at XtraLearn and mytutorstudio</h3>
-          <p>Provided personalized tutoring and support in mathematics.</p>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Maths Tutor at XtraLearn and mytutorstudio</h3>
+            <p>Provided personalized tutoring and support in mathematics.</p>
+          </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>AI Trainer at Outlier AI</h3>
-          <p>Conducted training sessions on AI methodologies and best practices.</p>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>AI Trainer at Outlier AI</h3>
+            <p>Conducted training sessions on AI methodologies and best practices.</p>
+          </div>
         </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Intern at Cushman and Wakefield Stevenson</h3>
-          <p>Gained valuable experience in data analysis and business solutions during my internship.</p>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Intern at Cushman and Wakefield Stevenson</h3>
+            <p>Gained valuable experience in data analysis and business solutions during my internship.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Projects & Career Highlights Section -->
-<section id="projects">
-  <div class="container">
-    <h2>Recent Projects Highlights</h2>
-    <div class="project-grid">
-      <!-- Project Card 1 -->
-      <div class="project-card">
-        <img src="{{ url_for('static', filename='images/wise_predict.png') }}"  alt="Scoresage - Premier League Soccer Prediction System">
-        <div class="project-content">
-          <h3>Scoresage - Premier League Soccer Prediction System</h3>
-          <p>A system that predicts Premier League soccer outcomes.</p>
+  <!-- Projects & Career Highlights Grid Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Recent Projects Highlights</h2>
+      <div class="project-grid">
+        <a href = "https://medium.com/@manishofficial4378/scoresage-the-premier-league-score-betting-revolution-is-here-bdeb691f997e" target = "_blank">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/scoresage.jpg') }}" alt="Scoresage - Premier League Soccer Prediction System">
+          <div class="project-content">
+            <h3>Scoresage - Premier League Soccer Prediction System</h3>
+            <p>A system that predicts Premier League soccer outcomes.</p>
+          </div>
         </div>
-      </div>
-      <!-- Project Card 2 -->
-      <div class="project-card">
-        <img src="{{ url_for('static', filename='images/fpl_logo.jpeg') }}" alt="FPL Prediction System">
-        <div class="project-content">
-          <h3>FPL Prediction System</h3>
-          <p>Recommends which players to transfer in/out to win FPL gameweeks.</p>
+        </a>
+        <a href="https://medium.com/@manishofficial4378/transforming-fantasy-premier-league-fpl-data-into-actionable-player-insights-with-machine-aee93f72f690" target="_blank">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/fpl_logo.jpeg') }}" alt="FPL Prediction System">
+          <div class="project-content">
+            <h3>FPL Recommendation System</h3>
+            <p>Recommends which players to transfer in/out to win FPL gameweeks. </p>
+          </div>
         </div>
-      </div>
-      <!-- Project Card 3 -->
-      <div class="project-card">
-        <img src="{{ url_for('static', filename='images/chp.jpg') }}" alt="Canada House Prediction System">
-        <div class="project-content">
-          <h3>Canada House Prediction System</h3>
-          <p>Predicts house valuation based on various buy/sell features.</p>
-        </div>
-      </div>
-      <!-- Project Card 4 -->
-      <div class="project-card">
-        <img src="{{ url_for('static', filename='images/spd.png') }}" alt="Sales Performance Dashboard">
-        <div class="project-content">
-          <h3>Sales Performance Dashboard</h3>
-          <p>A PowerBI based application that visualizes sales data.</p>
-        </div>
-      </div>
-      <!-- Project Card 5 -->
+      </a>
+      <a href = "https://github.com/zobrathemanish/report_automation">
       <div class="project-card">
         <img src="{{ url_for('static', filename='images/auto-report.jpg') }}" alt="Automatic Report Generation">
         <div class="project-content">
@@ -225,50 +215,71 @@
           <p>Generates reports by merging Excel stats with document templates using openpyxl.</p>
         </div>
       </div>
-      <!-- Project Card 6 -->
+      </a>
+      <a href = "https://github.com/zobrathemanish/deal_automation">
       <div class="project-card">
         <img src="{{ url_for('static', filename='images/data_entry_automation.jpeg') }}" alt="Data Entry Automation">
         <div class="project-content">
-          <h3>Data Entry Automation</h3>
+          <h3>Real Estate Data Entry Automation</h3>
           <p>Automates data entry from various sources for improved efficiency.</p>
         </div>
       </div>
-      <!-- Project Card 7 -->
-      <div class="project-card">
-        <img src="{{ url_for('static', filename='images/etl.jpg') }}" alt="ETL Automation">
-        <div class="project-content">
-          <h3>ETL Automation using Apache Airflow</h3>
-          <p>Automates ETL processes with Apache Airflow for streamlined data pipelines.</p>
-        </div>
-      </div>
+      </a>
+      <a href = "https://github.com/zobrathemanish/CMHC-zones">
       <div class="project-card">
         <img src="{{ url_for('static', filename='images/cmhc.jpg') }}" alt="CMHC Zones Tracker">
         <div class="project-content">
           <h3>Neighborhood and CMHC Zones Tracker</h3>
-          <p>Developed a Flask based user interface where you input the address and it returns the CHMC zones like Fort Rouge, Centennial, East Kildonan, etc.</p>
+          <p>A Flask-based UI that returns CMHC zones (e.g., Fort Rouge, Centennial) based on an input address.</p>
         </div>
       </div>
+      </a>
+      <a href = "https://github.com/zobrathemanish/canada-house-prediction">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/chp.jpg') }}" alt="Canada House Prediction System">
+          <div class="project-content">
+            <h3>Canada House Prediction System</h3>
+            <p>Predicts house valuation based on various buy/sell features.</p>
+          </div>
+        </div>
+        </a>
+        <a href = "https://github.com/zobrathemanish/sales-performance-dashboard">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/spd.png') }}" alt="Sales Performance Dashboard">
+          <div class="project-content">
+            <h3>Sales Performance Dashboard</h3>
+            <p>A PowerBI based application that visualizes sales data.</p>
+          </div>
+        </div>
+        </a>
+        <a href = "https://medium.com/@manishofficial4378/scoresage-the-premier-league-score-betting-revolution-is-here-bdeb691f997e">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/etl.jpg') }}" alt="ETL Automation">
+          <div class="project-content">
+            <h3>ETL Automation using Apache Airflow</h3>
+            <p>Automates ETL processes with Apache Airflow for streamlined data pipelines.</p>
+          </div>
+        </div>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Certifications Section -->
+  <!-- Certifications Slider Section -->
+   <a href = "https://drive.google.com/drive/folders/1uQwAa8MBQan_C0gdFbuCAoASzTogqIUz">
   <section id="certifications">
     <div class="container">
       <h2>Certifications</h2>
       <div class="cert-slider-container">
         <button class="slider-btn prev-btn">&lt;</button>
         <div class="cert-slider">
-          
-          <!-- Certification Card 1: Snowflake Certificate -->
           <div class="certification-card">
-            <img src="{{ url_for('static', filename='images/snowflake.png') }}" alt="Hands on Essentials SnowFlake">
+            <img src="{{ url_for('static', filename='images/snowflake.png') }}" alt="Hands-on Essentials: Snowflake">
             <div class="certification-content">
               <h3>Hands-On Essentials: Data Warehousing Workshop - Snowflake</h3>
               <p>Issued by Snowflake on March 21, 2024</p>
             </div>
           </div>
-          <!-- Certification Card 2: PG in AI, UoW Certificate -->
           <div class="certification-card">
             <img src="{{ url_for('static', filename='images/pace_grad_letter4.png') }}" alt="PG in AI, UoW Certificate">
             <div class="certification-content">
@@ -276,7 +287,6 @@
               <p>Issued by University of Winnipeg</p>
             </div>
           </div>
-          <!-- Certification Card 3: Work Experience Certificates -->
           <div class="certification-card">
             <img src="{{ url_for('static', filename='images/studiosity.png') }}" alt="Studiosity Work Experience">
             <div class="certification-content">
@@ -284,40 +294,34 @@
               <p>Academic Feedback Specialist at Studiosity</p>
             </div>
           </div>
-           <!-- Certification Card 3: Work Experience Certificates -->
-           <div class="certification-card">
-            <img src="{{ url_for('static', filename='images/bottle_we.png') }}" alt="Bottle Work Experience Certificate">
+          <div class="certification-card">
+            <img src="{{ url_for('static', filename='images/bottle_we.png') }}" alt="Bottle Tech Work Experience">
             <div class="certification-content">
-              <h3>Bottle Technology Private Limited Work Experience</h3>
+              <h3>Bottle Technology Work Experience</h3>
               <p>Machine Learning Engineer at Bottle Tech</p>
             </div>
           </div>
-          <!-- Certification Card 3: Work Experience Certificates -->
           <div class="certification-card">
-            <img src="{{ url_for('static', filename='images/nebula_we.png') }}" alt="Nebula Work Experience Certificate">
+            <img src="{{ url_for('static', filename='images/nebula_we.png') }}" alt="Nebula Tech Work Experience">
             <div class="certification-content">
-              <h3>Nebula Technology Private Limited</h3>
-              <p>ML Engineer/ Data Analyst at Nebula Technology</p>
+              <h3>Nebula Technology</h3>
+              <p>ML Engineer/Data Analyst at Nebula Technology</p>
             </div>
           </div>
-          <!-- Certification Card 3: Work Experience Certificates -->
           <div class="certification-card">
-            <img src="{{ url_for('static', filename='images/mcc_we.png') }}" alt="MCC Work Experience Certificate">
+            <img src="{{ url_for('static', filename='images/mcc_we.png') }}" alt="Mero Coding Class Work Experience">
             <div class="certification-content">
               <h3>Mero Coding Class</h3>
               <p>Program Coordinator at Mero Coding Class</p>
             </div>
           </div>
-          <!-- Certification Card 3: Work Experience Certificates -->
           <div class="certification-card">
-            <img src="{{ url_for('static', filename='images/nss_we.png') }}" alt="NIST Work Experience Certificate">
+            <img src="{{ url_for('static', filename='images/nss_we.png') }}" alt="NIST Work Experience">
             <div class="certification-content">
               <h3>National School of Sciences</h3>
-              <p>Instructor high school - NSS</p>
+              <p>Instructor at NSS</p>
             </div>
           </div>
-            
-             <!-- Certification Card 5: GRE Test Scores -->
           <div class="certification-card">
             <img src="{{ url_for('static', filename='images/gre.png') }}" alt="GRE Test Scores">
             <div class="certification-content">
@@ -325,152 +329,147 @@
               <p>Official GRE score report</p>
             </div>
           </div>
-          <!-- Certification Card 4: Letter of Recommendations
-          <div class="certification-card">
-            <img src="{{ url_for('static', filename='images/letter_of_recommendation.png') }}" alt="Letter of Recommendations">
-            <div class="certification-content">
-              <h3>Letter of Recommendations</h3>
-              <p>Letters from previous employers</p>
-            </div>
-          </div> -->
-          <!-- Certification Card 0: Bachelor Graduation Certificate -->
           <div class="certification-card">
             <img src="{{ url_for('static', filename='images/bachelor_cert.png') }}" alt="Bachelor Graduation Certificate">
             <div class="certification-content">
               <h3>Bachelor Graduation Certificate</h3>
-              <p>Issued by [University Name]</p>
+              <p>Issued by Tribhuvan University</p>
             </div>
           </div>
-         
+          <div class="certification-card">
+            <img src="{{ url_for('static', filename='images/web_design.jpg') }}" alt="Web Design">
+            <div class="certification-content">
+              <h3>Web Design Certificate - Suryodaya School</h3>
+              <p>Designed web at Grade 6 and graphic designing at Grade 4</p>
+            </div>
+          </div>
+          <div class="certification-card">
+            <img src="{{ url_for('static', filename='images/islington_training.jpg') }}" alt="Islington Training">
+            <div class="certification-content">
+              <h3>Islington Training</h3>
+              <p>Animation and Photography</p>
+            </div>
+          </div>
         </div>
         <button class="slider-btn next-btn">&gt;</button>
       </div>
     </div>
   </section>
-
-  <!-- JavaScript for Slider Navigation -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const slider = document.querySelector('.cert-slider');
-      const prevBtn = document.querySelector('.prev-btn');
-      const nextBtn = document.querySelector('.next-btn');
-      let offset = 0;
-      // Calculate card width including margin (assuming 280px + 20px margin)
-      const cardWidth = document.querySelector('.certification-card').offsetWidth + 20;
-      
-      nextBtn.addEventListener('click', function() {
-        // Maximum offset is slider scrollWidth - container width
-        const maxOffset = slider.scrollWidth - slider.parentElement.offsetWidth;
-        offset = Math.min(offset + cardWidth, maxOffset);
-        slider.style.transform = `translateX(-${offset}px)`;
-      });
-      
-      prevBtn.addEventListener('click', function() {
-        offset = Math.max(offset - cardWidth, 0);
-        slider.style.transform = `translateX(-${offset}px)`;
-      });
-    });
-  </script>
+  </a>
 
  <!-- Extra‑Curricular Activities Section with Clickable Images for Non-Video Items -->
 <section id="extra">
   <div class="container">
     <h2>Extra‑Curricular Activities</h2>
     <div class="eca-grid">
-      <!-- Activity 1: Trek to Highest Pass (Video) -->
+      <!-- Item 1: Trek to Highest Pass -->
       <div class="eca-item">
-        <h3>Trek to Highest Pass in the world (5416m)</h3>
+        <h3>Trek to Highest Pass in the World (5416m)</h3>
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/jUwUao9qf3Y?start=1324" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-      <!-- Activity 2: My Rap Video 1 (Video) -->
+      <!-- Item 2: Me Singing Some Rap -->
       <div class="eca-item">
-        <h3>Me Singing Some Rap (Intellect Vs Intuition) <br></h3>
+        <h3>Me Singing Some Rap (Intellect Vs Intuition)</h3>
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/tcMnPf8G4K8?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-      <!-- Activity 3: My Rap Video 2 (Video) -->
+      <!-- Item 3: Another Rap Song -->
       <div class="eca-item">
-        <h3>Another rap song I created (Pursuit of Greatness)</h3>
+        <h3>Another Rap Song Composed (Pursuit of Greatness)</h3>
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/ovffti-LXjw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-      <!-- Activity 4: Soccer Tournament Certificate (Clickable Image) -->
+      <!-- Item 4: Score Betting System - ScoreSage Presentation -->
       <div class="eca-item">
-        <a href="https://example.com/soccer-certificate" target="_blank">
-          <img src="https://source.unsplash.com/800x600/?soccer,trophy" alt="Soccer Tournament Certificate">
-        </a>
-        <h3>Soccer Tournament Certificate</h3>
+        <h3>Score Betting System - ScoreSage Presentation</h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/E8N64nqb8Kk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
-      <!-- Activity 5: My Poems and Articles (Clickable Image) -->
+      <!-- Item 5: Soccer Tournament Certificate (Clickable Image) -->
       <div class="eca-item">
-        <a href="https://dangimanish.blogspot.com/" target="_blank">
-          <img src="https://source.unsplash.com/800x600/?poetry" alt="My Poems and Articles">
-        </a>
-        <h3>My Poems and Articles</h3>
+        <h3>Soccer Tournament Certificate (Futsal Tournament)</h3>
+        <div class="video-container">
+          <a href="https://drive.google.com/drive/folders/1uQwAa8MBQan_C0gdFbuCAoASzTogqIUz" target="_blank">
+            <img src="{{ url_for('static', filename='images/soccerwin.jpg') }}" alt="Soccer Tournament Certificate">
+          </a>
+        </div>
+      </div>
+      <!-- Item 6: My Poems and Articles (Clickable Image) -->
+      <div class="eca-item">
+        <h3>My Poems and Articles - I did poetry when young :)</h3>
+        <div class="video-container">
+          <a href="https://dangimanish.blogspot.com/" target="_blank">
+            <img src="{{ url_for('static', filename='images/poetry.jpg') }}" alt="My Poems and Articles">
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+
+<!-- Additional Information Section -->
+<section id="additional-info">
+  <div class="container">
+      <h2>Additional Information</h2>
+      <div class="info-box">
+          <div class="info-item"><strong>Email:</strong> <a href="mailto:manishofficial4378@email.com">manishofficial4378@email.com</a></div>
+          <div class="info-item"><strong>Phone:</strong> <a href="tel:+14317928448">(431) 792-8448</a></div>
+          <div class="info-item"><strong>Country of Origin:</strong> Nepal</div>
+          <div class="info-item"><strong>Birth Date:</strong> 1995/06/29</div>
+          <div class="info-item"><strong>Ethnicity:</strong> South Asian</div>
+          <div class="info-item"><strong>Married:</strong> Yes</div>
+          <div class="info-item"><strong>Height:</strong> 172.5 cm</div>
+          <div class="info-item"><strong>Current Status:</strong> Post Graduate Work Permit (PGWP)</div>
+      </div>
+  </div>
+</section>
+
+
+
 
   <!-- Footer -->
   <footer>
     <p>© 2025 Manish Dangi. All rights reserved.</p>
   </footer>
 
-  <!-- JavaScript for Marquee Animation and Active Slide Detection -->
+  <!-- JavaScript for Marquee Animation and Slider Navigation -->
   <script>
+    // Marquee Animation for sliders (Recent Updates)
     function startMarquee(sliderElement, speed) {
-  let offset = 0;
-  const sliderWidth = sliderElement.scrollWidth / 2;
-
-  function animate() {
-    offset -= speed;
-    if (Math.abs(offset) >= sliderWidth) {
-      offset = 0;
+      let offset = 0;
+      const sliderWidth = sliderElement.scrollWidth / 2;
+      function animate() {
+        offset -= speed;
+        if (Math.abs(offset) >= sliderWidth) {
+          offset = 0;
+        }
+        sliderElement.style.transform = `translateX(${offset}px)`;
+        updateActiveSlide(sliderElement);
+        requestAnimationFrame(animate);
+      }
+      animate();
     }
-    // Adding a small easing effect using CSS transform transitions already applied
-    sliderElement.style.transform = `translateX(${offset}px)`;
-    updateActiveSlide(sliderElement);
-    requestAnimationFrame(animate);
-  }
-  animate();
-}
-
-
+    
+    // Highlight the slide closest to the container's center
     function updateActiveSlide(sliderElement) {
-      // Check if any slide is hovered; if so, that slide is active
       const hoveredSlide = sliderElement.querySelector('.slide.hover');
       if (hoveredSlide) {
         sliderElement.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
         hoveredSlide.classList.add('active');
         return;
       }
-
-      // Otherwise, highlight the slide closest to the container's center
       const container = sliderElement.parentElement;
       const containerRect = container.getBoundingClientRect();
       const containerCenter = containerRect.left + containerRect.width / 2;
       const slides = sliderElement.querySelectorAll('.slide');
       let closestSlide = null;
       let minDistance = Infinity;
-
       slides.forEach(slide => {
         const slideRect = slide.getBoundingClientRect();
         const slideCenter = slideRect.left + slideRect.width / 2;
@@ -480,18 +479,17 @@
           closestSlide = slide;
         }
       });
-
       slides.forEach(slide => slide.classList.remove('active'));
       if (closestSlide) {
         closestSlide.classList.add('active');
       }
     }
-
+    
+    // Add hover listeners for immediate emphasis on hover
     function addHoverListeners(sliderElement) {
       sliderElement.querySelectorAll('.slide').forEach(slide => {
         slide.addEventListener('mouseover', function() {
           slide.classList.add('hover');
-          // Immediately emphasize the hovered slide
           sliderElement.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
           slide.classList.add('active');
         });
@@ -500,14 +498,35 @@
         });
       });
     }
-
-    window.addEventListener('load', function() {
+    
+    document.addEventListener('DOMContentLoaded', function() {
       const recentSlider = document.getElementById('recentSlider');
+      // For Projects slider marquee, uncomment the following two lines and add id="projectsSlider" to your projects slider container if needed
       // const projectsSlider = document.getElementById('projectsSlider');
-      addHoverListeners(recentSlider);
       // addHoverListeners(projectsSlider);
+      
+      addHoverListeners(recentSlider);
       startMarquee(recentSlider, 1.0);
+      // Uncomment below if you want to start marquee on projects slider as well
       // startMarquee(projectsSlider, 1.0);
+      
+      // Certifications Slider Navigation
+      const certSlider = document.querySelector('.cert-slider');
+      const prevBtn = document.querySelector('.prev-btn');
+      const nextBtn = document.querySelector('.next-btn');
+      let certOffset = 0;
+      const cardWidth = document.querySelector('.certification-card').offsetWidth + 20;
+      
+      nextBtn.addEventListener('click', function() {
+        const maxOffset = certSlider.scrollWidth - certSlider.parentElement.offsetWidth;
+        certOffset = Math.min(certOffset + cardWidth, maxOffset);
+        certSlider.style.transform = `translateX(-${certOffset}px)`;
+      });
+      
+      prevBtn.addEventListener('click', function() {
+        certOffset = Math.max(certOffset - cardWidth, 0);
+        certSlider.style.transform = `translateX(-${certOffset}px)`;
+      });
     });
   </script>
 </body>
