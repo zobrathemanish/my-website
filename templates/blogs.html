@@ -86,10 +86,9 @@
     .blog-card:hover {
       transform: translateY(-5px);
     }
-    /* Force uniform image size */
     .blog-card img {
       width: 100%;
-      height: 200px; /* You can change this to any desired fixed height */
+      height: 200px;
       object-fit: cover;
       display: block;
     }
@@ -152,64 +151,71 @@
   </header>
 
   <!-- Blog Posts Container -->
-  <div class="container">
-    <div class="blog-cards">
-      <!-- Blog Post 1: Graduation -->
-      <div class="blog-card">
-        <img src="{{ url_for('static', filename='images/winner_scoresage.jpeg') }}" alt="Datathon">
-        <div class="card-content">
-          <h2>Winner at Datathon Competition</h2>
-          <p>Thrilled to announce that my team, ScoreSage, won the Winnipeg Open Data Datathon during MB Tech Week! Competing against talented teams, we built a data-driven solution within just 4 hours, combining open data from the City of Winnipeg and CMHC to create a nearly market-ready app. It was an amazing experience showcasing the power of data and teamwork.</p>
-          <a href="https://docs.google.com/presentation/d/1PHComz80W8LwyzfV7N8QLTW4oQ109OnuZvJ6vbg7SEQ/edit?usp=sharing" class="read-more">Read More</a>
-        </div>
+<div class="container">
+  <div class="blog-cards">
+    <!-- Blog Post 1: Datathon -->
+    <div class="blog-card">
+      <img src="{{ url_for('static', filename='images/winner_scoresage.jpeg') }}" alt="Datathon">
+      <div class="card-content">
+        <h2>Winner at Datathon Competition</h2>
+        <p>Thrilled to announce that my team, ScoreSage, won the Winnipeg Open Data Datathon during MB Tech Week! Competing against talented teams, we built a data-driven solution within just 4 hours, combining open data from the City of Winnipeg and CMHC to create a nearly market-ready app. It was an amazing experience showcasing the power of data and teamwork.</p>
+        <a href="https://docs.google.com/presentation/d/1PHComz80W8LwyzfV7N8QLTW4oQ109OnuZvJ6vbg7SEQ/edit?usp=sharing" class="read-more">Learn More</a>
       </div>
+    </div>
 
-    <div class="blog-cards">
-      <!-- Blog Post 1: Graduation -->
-      <div class="blog-card">
-        <img src="{{ url_for('static', filename='images/graduation.png') }}" alt="Graduation">
-        <div class="card-content">
-          <h2>Graduated from University of Winnipeg</h2>
-          <p>I recently graduated from the University of Winnipeg with a Post Graduate Diploma in AI, earning a 3.99 GPA—a milestone in my academic journey.</p>
-          <a href="https://drive.google.com/file/d/18Cu6O7OLF3axjGKTuql7xFLai4jlCCOD/view?usp=sharing" class="read-more">Read More</a>
-        </div>
+    <!-- Blog Post 2: Career Journey -->
+    <div class="blog-card">
+      <img src="{{ url_for('static', filename='images/Manish-Dangi.jpg') }}" alt="Career Journey">
+      <div class="card-content">
+        <h2>My Career Journey Summarized</h2>
+        <p>Always passionate and hard-working, I give my best to any work I do. Even data cleaning is fun to me because it serves the purpose.</p>
+        <a href="https://shorturl.at/X5mbv" class="read-more">Learn More</a>
       </div>
+    </div>
 
-      <!-- Blog Post 2: Internship -->
-      <div class="blog-card">
-        <img src="{{ url_for('static', filename='images/cnw.jpg') }}" alt="Internship">
-        <div class="card-content">
-          <h2>Data Intern at Cushman and Wakefield Stevenson</h2>
-          <p>I completed an internship at Cushman and Wakefield Stevenson in the Business Solutions department as a Data Intern, gaining invaluable industry experience.</p>
-          <a href="#" class="read-more">Read More</a>
-        </div>
+    <!-- Blog Post 3: Graduation -->
+    <div class="blog-card">
+      <img src="{{ url_for('static', filename='images/graduation.png') }}" alt="Graduation">
+      <div class="card-content">
+        <h2>Graduated from University of Winnipeg</h2>
+        <p>I recently graduated from the University of Winnipeg with a Post Graduate Diploma in AI, earning a 3.99 GPA—a milestone in my academic journey.</p>
+        <a href="https://drive.google.com/file/d/18Cu6O7OLF3axjGKTuql7xFLai4jlCCOD/view?usp=sharing" class="read-more">Learn More</a>
       </div>
+    </div>
 
-      <!-- Blog Post 3: FPL Recommendation System -->
-      <div class="blog-card">
-        <img src="{{ url_for('static', filename='images/fpl_logo.jpeg') }}" alt="FPL Recommendation System">
-        <div class="card-content">
-          <h2>FPL Recommendation System</h2>
-          <p>I developed the FPL Recommendation System, an innovative project that leverages AI to optimize team selection and performance in Fantasy Premier League.</p>
-          <a href="https://medium.com/@manishofficial4378/scoresage-the-premier-league-score-betting-revolution-is-here-bdeb691f997e" class="read-more">Read More</a>
-        </div>
+    <!-- Blog Post 4: Internship -->
+    <div class="blog-card">
+      <img src="{{ url_for('static', filename='images/cnw.jpg') }}" alt="Internship">
+      <div class="card-content">
+        <h2>Data Intern at Cushman and Wakefield Stevenson</h2>
+        <p>I completed an internship at Cushman and Wakefield Stevenson in the Business Solutions department as a Data Intern, gaining invaluable industry experience.</p>
+        <a href="#" class="read-more">Learn More</a>
       </div>
+    </div>
 
-      <!-- Blog Post 4: Sports Betting System (ScoreSage) -->
-      <div class="blog-card">
-        <img src="{{ url_for('static', filename='images/scoresage.jpeg') }}" alt="ScoreSage">
-        <div class="card-content">
-          <h2>Sports Betting System (ScoreSage)</h2>
-          <p>Introducing ScoreSage—a cutting-edge sports betting system designed to deliver real-time insights and analytics for enhanced decision-making.</p>
-          <a href="https://medium.com/@manishofficial4378/transforming-fantasy-premier-league-fpl-data-into-actionable-player-insights-with-machine-aee93f72f690" class="read-more">Read More</a>
-        </div>
+    <!-- Blog Post 5: FPL Recommendation System -->
+    <div class="blog-card">
+      <img src="{{ url_for('static', filename='images/fpl_logo.jpeg') }}" alt="FPL Recommendation System">
+      <div class="card-content">
+        <h2>FPL Recommendation System</h2>
+        <p>I developed the FPL Recommendation System, an innovative project that leverages AI to optimize team selection and performance in Fantasy Premier League.</p>
+        <a href="https://medium.com/@manishofficial4378/scoresage-the-premier-league-score-betting-revolution-is-here-bdeb691f997e" class="read-more">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Blog Post 6: Sports Betting System (ScoreSage) -->
+    <div class="blog-card">
+      <img src="{{ url_for('static', filename='images/scoresage.jpeg') }}" alt="ScoreSage">
+      <div class="card-content">
+        <h2>Sports Betting System (ScoreSage)</h2>
+        <p>Introducing ScoreSage—a cutting-edge sports betting system designed to deliver real-time insights and analytics for enhanced decision-making.</p>
+        <a href="https://medium.com/@manishofficial4378/transforming-fantasy-premier-league-fpl-data-into-actionable-player-insights-with-machine-aee93f72f690" class="read-more">Learn More</a>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Manish Dangi. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<!-- Footer -->
+<footer>
+  <p>© 2025 Manish Dangi. All rights reserved.</p>
+</footer>
