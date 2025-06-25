@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Manish Dangi</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fafafa;
+    }
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      font-weight: 700;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 100px auto 40px;
+      padding: 0 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .project-card ul {
+      padding-left: 20px;
+    }
+    .project-card ul li {
+      margin-bottom: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/#certifications">Certifications</a></li>
+      <li><a href="/#projects">Projects</a></li>
+      <li><a href="/blogs.html">Blogs</a></li>
+      <li><a href="/portfolio.html">Portfolio</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Portfolio Header -->
+  <div class="container">
+    <header>
+      <h1>Project Portfolio</h1>
+      <p>Highlighted work showcasing my skills in data, AI, automation, and computer vision.</p>
+    </header>
+
+    <!-- Projects Grid -->
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>Auto Report Generation</h3>
+        <ul>
+          <li><a href="https://github.com/zobrathemanish/report_automation" target="_blank">GitHub</a></li>
+          <li><a href="https://report-automation-ai4w.onrender.com" target="_blank">Live Demo</a></li>
+          <li><a href="https://youtu.be/5EmHOyBlhVs" target="_blank">Video</a></li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Automated Deal Sheet to Database</h3>
+        <ul>
+          <li><a href="https://github.com/zobrathemanish/deal_automation" target="_blank">GitHub</a></li>
+          <li><a href="https://youtu.be/K1mXaCIueXg" target="_blank">Video</a></li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Soccer Betting Prediction System (ScoreSage)</h3>
+        <ul>
+          <li><a href="https://github.com/zobrathemanish/ScoreSage" target="_blank">GitHub</a></li>
+          <li><a href="https://medium.com/@manishofficial4378/scoresage-the-premier-league-score-betting-revolution-is-here-bdeb691f997e" target="_blank">Medium Article</a></li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>CMHC Zones Automation</h3>
+        <ul>
+          <li><a href="https://github.com/zobrathemanish/CMHC-zones" target="_blank">GitHub</a></li>
+          <li><a href="https://docs.google.com/presentation/d/1z8L9LL8o5bxNlsMem2ZvxzJmNtPKZxpiw-Fn8bWBOwM/edit" target="_blank">Presentation</a></li>
+          <li><a href="https://cmhc-zones.onrender.com" target="_blank">Live Demo</a></li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Fantasy Premier League Recommendation System</h3>
+        <ul>
+          <li><a href="https://github.com/zobrathemanish/FPL-Recommendation" target="_blank">GitHub</a></li>
+          <li><a href="https://medium.com/@manishofficial4378/transforming-fantasy-premier-league-fpl-data-into-actionable-player-insights-with-machine-aee93f72f690" target="_blank">Medium Article</a></li>
+          <li><a href="https://fplprediction-1.onrender.com" target="_blank">Live App</a></li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>People Counter using OpenCV</h3>
+        <ul>
+          <li><a href="https://github.com/zobrathemanish/People-Counter" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Face & Body Detection and Tracking</h3>
+        <ul>
+          <li><a href="https://github.com/zobrathemanish/Face-Body-Detect-Track" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Object Detection</h3>
+        <ul>
+          <li><a href="https://github.com/zobrathemanish/detectobjects" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>Devanagari OCR & Translation</h3>
+        <ul>
+          <li><a href="https://github.com/zobrathemanish/finalocrbe2" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Manish Dangi. All rights reserved.</p>
+  </footer>
+</body>
+</html>

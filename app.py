@@ -24,5 +24,9 @@ def career():
 def career_experience():
     return render_template('career-experience.html')
 
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
